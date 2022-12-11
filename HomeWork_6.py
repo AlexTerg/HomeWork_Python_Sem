@@ -1,16 +1,16 @@
 from math import gcd
 # В модуле math есть функция math.gcd(a, b), возвращающая наибольший общий делитель (НОД) двух чисел. Вычислите и напечатайте наибольший общий делитель для списка натуральных чисел. Ввод чисел продолжается до ввода пустой строки.
 
-# numbers_lst = []
+numbers_lst = []
 
-# while True:
-#     try:
-#         num = int(input('Введите число. Для завершения, введите пустую строку\n'))
-#         numbers_lst.append(num)
-#     except ValueError:
-#         break
+while True:
+    try:
+        num = int(input('Введите число. Для завершения, введите пустую строку\n'))
+        numbers_lst.append(num)
+    except ValueError:
+        break
 
-# print(gcd(*numbers_lst))
+print(gcd(*numbers_lst))
 
 # 2. Орел и решка
 
@@ -44,9 +44,11 @@ print(max_tails_of_coin(text_coding_lst))
 
 numbers = input('Enter numbers ').split()
 
+
 def isdiagram(lst):
     diagram = list(map(lambda x: int(x) * '*', lst))
     return diagram
+
 
 diagram_lst = isdiagram(numbers)
 
