@@ -14,7 +14,7 @@ print(gcd(*numbers_lst))
 
 # 2. Орел и решка
 
-text = 'ООООРРРРОРОРРРРРРРРООРОРОРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРР'
+text = 'ОООО'
 
 
 def coding(string):
@@ -34,7 +34,7 @@ def coding(string):
 
 def max_tails_of_coin(lst):
     temp = list(map(lambda x: int(x[:-1]), filter(lambda x: 'Р' in x, lst)))
-    return max(temp)
+    return max(temp) if temp else 0
 
 
 text_coding_lst = coding(text).split()
