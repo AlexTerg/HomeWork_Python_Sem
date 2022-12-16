@@ -39,9 +39,6 @@ def get_continue():
     value = int(input('Добавить еще человека?\n1 - да\n2 - нет\n'))
     return value
 
-def import_to():
-    value = int(input('Импортировать из:\n1 - txt в csv\n2 - csv в txt\n'))
-    return value
 
 def get_directory():
     directory = input('Укажите папку где находится файл\n')
